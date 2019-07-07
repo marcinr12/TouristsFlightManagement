@@ -1,0 +1,39 @@
+<div>
+  <button (click)="getFlights()"> Show flights</button>
+  <button (click)="closeFlightsList()"> Close flights list</button>
+</div>
+
+<div>
+  <button (click)="deleteFlightById()"> Delete flight by ID</button>
+  <button (click)="postFlight()"> Post flight</button>
+</div>
+
+<div>
+  <button (click)="getTouristsByFlightId()"> Show tourists by flight id</button>
+  <button (click)="closeTouristsList()"> Close tourist list</button> <br>
+</div>
+
+<div>
+  <button (click)="deleteTouristFromFlight()"> Delete tourist from flight</button>
+  <button (click)="postConnection()"> Add connection</button>
+</div>
+
+<div>
+  Flight ID: <input [(ngModel)]="flightId">
+  Tourist ID: <input [(ngModel)]="touristId">
+</div>
+
+<div>
+  Departure: <input [(ngModel)]="departure">
+  Arrival: <input [(ngModel)]="arrival">
+  Seats number: <input [(ngModel)]="seatsNumber">
+  Occupied seats: <input [(ngModel)]="occupiedSeats">
+</div>
+
+<div style="white-space: pre-line;">
+  {{flightsString}}
+</div>
+
+<div style="white-space: pre-line;">
+  {{touristString}}
+</div>
